@@ -1,2 +1,1 @@
-# basic_javascript
-# basic_javascript
+This repo is belongs to Aisyah
