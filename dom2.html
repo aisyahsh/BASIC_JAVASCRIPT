@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <p class="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptatem,
+      asperiores beatae possimus esse optio quo molestiae, doloremque corporis
+      cumque odit repudiandae perspiciatis, blanditiis consequuntur modi quas
+      vel. Deserunt, labore.
+    </p>
+    <p class="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptatem,
+      asperiores beatae possimus esse optio quo molestiae, doloremque corporis
+      cumque odit repudiandae perspiciatis, blanditiis consequuntur modi quas
+      vel. Deserunt, labore.
+    </p>
+    <p class="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptatem,
+      asperiores beatae possimus esse optio quo molestiae, doloremque corporis
+      cumque odit repudiandae perspiciatis, blanditiis consequuntur modi quas
+      vel. Deserunt, labore.
+    </p>
+
+    <script>
+      var b = document.getElementById("demo");
+      setInterval(function () {
+        b.innerHTML = "Hello";
+        b.style.color = "white";
+        b.style.padding = "10px";
+        a[0].style.color = "yellow";
+        a[1].style.color = "blue";
+        a[2].style.color = "aqua";
+        b.style.backgroundColor = "red";
+        setTimeout(function () {
+          b.innerHTML = "welcome to asia";
+          b.style.backgroundColor = "black";
+          a[0].style.color = "red";
+          a[1].style.color = "green";
+          a[2].style.color = "purple";
+        }, 500);
+      }, 1000);
+
+      var a = document.getElementsByClassName("paragraf");
+
+      for (var i = 0; i < a.length; i++) {
+        a[i].style.color = "purple";
+      }
+    </script>
+  </body>
+</html>
